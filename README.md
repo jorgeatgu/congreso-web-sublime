@@ -3,7 +3,8 @@
 
 Lanzar servidor dentro de slides
 
-En el terminarl > python -m SimpleHTTPServer
+En el terminal > python -m SimpleHTTPServer 12345
+En Chrome > http://localhost:12345/
 
 
 ## Edit
