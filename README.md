@@ -1,13 +1,10 @@
 # congreso-web-sublime
 
 
-No se cuando esta cerrada la etiqueta
-Diccionario en español.
-Al copiar y pegar
-Customizar herramienta
-Estilos en linea pintar colores.
-Packages de HTML.
-Mayusculas y minisculas
+Lanzar servidor dentro de slides
+
+En el terminarl > python -m SimpleHTTPServer
+
 
 ## Edit
 Cerrar una etiqueta > ⌥⌘. alt .
