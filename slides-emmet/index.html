@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Emmet - Jorge Aznar & Abril Robles</title>
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/beige.css" id="theme">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <div class="reveal">
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section data-background="images/vuela-emmet.gif">
+                <h3 style="color: #fff;">Emmet como herramienta de creación de HTML y CSS</h3>
+            </section>
+            <section style="text-align: left;">
+                <h2>¡Buenos días!</h2>
+                <p>
+                    Somos <strong>Jorge Aznar</strong> y <strong>Abril Robles</strong>, y trabajamos en Hiberus Internet.
+                </p>
+                <ul>
+                    <li><a href="http://twitter.com/jorgeatgu">http://twitter.com/jorgeatgu</a></li>
+                    <li><a href="http://twitter.com/AbrilRobl">http://twitter.com/AbrilRobl</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>EMMET</h3>
+                <p>http://docs.emmet.io/</p>
+            </section>
+            <section>
+                <section class="present">
+                    <h3>Instalando EMMET en Sublime</h3>
+                </section>
+                <section class="future">
+                    <h3>1 - Descargar Sublime en: www.sublimetext.com</h3>
+                </section>
+                <section class="future">
+                    <h3>2 - Instalar package control en: https://packagecontrol.io/</h3>
+                    <p class="fragment">Vamos a Instalation y copiamos el código</p>
+                    <p class="fragment">Ahora vamos a <i>View > Show console</i> y pegamos el código</p>
+                </section>
+                <section class="future">
+                    <h3>3 - Vamos a tools > command palette</h3>
+                    <p class="fragment">Escribimos: Install package</p>
+                    <p class="fragment">Y escribimos: Emmet</p>
+                </section>
+            </section>
+            <section>
+                <h3>Ejercicio: Creando el HTML</h3>
+                <div class="fragment">
+                    <p>Nuevo Documento > Y seleccionamos HTML en la parte inferior derecha</p>
+                </div>
+                <p class="fragment">Y ahora escribimos una exclamación de cierre <strong style="font-size: 30px">!</strong></p>
+                <p class="fragment">Una vez creado el HTML, tabulando nos permite ir a los diferentes campos facilintado ser rellenados</p>
+                <img style="border: 0; background: transparent; box-shadow: none; margin-right: 10px; max-width: 400px;" src="images/suprirse.gif" alt="" class=" fragment">
+            </section>
+            <section>
+                <section class="present">
+                    <h3>Hijos</h3>
+                    <h4>Como insertar un elemento dentro de otro</h4>
+                    <p class="fragment">nav>ul>li</p>
+                    <div class="fragment">
+                        <pre class="fragment"><code>
+                        <nav>
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </nav>
+                                    </code></pre>
+                    </div>
+                </section>
+                <section data-background="#add9e4" class="future">
+                    <h2>Ejercicio hijos</h2>
+                    <div class="fragment">
+                        <p class="fragment">Crea la siguiente estructura</p>
+                        <pre class="fragment"><code>
+<section>
+    <article></article>
+</section>
+                                    </code></pre>
+                    </div>
+                    <p class="fragment">Solución:section>article</p>
+                </section>
+            </section>
+            <section>
+                <section class="present">
+                    <h3>Hermanos</h3>
+                    <h4>Como crear elementos contiguos</h4>
+                    <p class="fragment">div+p+a</p>
+                    <div class="fragment">
+                        <pre class="fragment"><code>
+                        <div></div>
+                        <p></p>
+                        <a href=""></a>
+                                    </code></pre>
+                    </div>
+                </section>
+                <section data-background="#add9e4" class="future">
+                    <h2>Ejercicio hermanos</h2>
+                    <div class="fragment">
+                        <p class="fragment">Crea la siguiente estructura</p>
+                        <pre class="fragment"><code>
+                        <header></header>
+                        <nav></nav>
+                                    </code></pre>
+                    </div>
+                    <p class="fragment">Solución:header+nav</p>
+                </section>
+            </section>
+            <section>
+                <section class="present">
+                    <h3>Climb-up</h3>
+                    <h4>Subiendo niveles</h4>
+                    <p class="fragment">section+article>p>span+em^bq</p>
+                    <div class="fragment">
+                        <pre class="fragment"><code>
+    <section></section>
+    <article>
+        <p><span></span><em></em></p>
+        <blockquote></blockquote>
+    </article>
+                                    </code></pre>
+                    </div>
+                </section>
+                <section data-background="#add9e4" class="future">
+                    <h2>Ejercicio climb-up</h2>
+                    <div class="fragment">
+                        <p class="fragment">Crea la siguiente estructura</p>
+                        <pre class="fragment"><code>
+    <div></div>
+    <div>
+        <p><span></span><em></em></p>
+        <footer></footer>
+    </div>
+                                    </code></pre>
+                    </div>
+                    <p class="fragment">Solución: div+div>p>span+em^footer</p>
+                </section>
+            </section>
+            <section>
+                <section class="present">
+                    <h3>Grouping</h3>
+                    <h4>Agrupando etiquetas</h4>
+                    <p class="fragment">header>(nav>ul>li>a)+section</p>
+                    <div class="fragment">
+                        <pre class="fragment"><code>
+    <header>
+        <nav>
+            <ul>
+                <li><a href=""></a></li>
+            </ul>
+        </nav>
+        <section></section>
+    </header>
+                                            </code></pre>
+                    </div>
+                </section>
+                <section data-background="#add9e4" class="future">
+                    <h2>Ejercicio agrupando</h2>
+                    <div class="fragment">
+                        <p class="fragment">Crea la siguiente estructura</p>
+                        <pre class="fragment"><code>
+    <div></div>
+    <div>
+        <p><span></span><em></em></p>
+        <footer></footer>
+    </div>
+                                            </code></pre>
+                    </div>
+                    <p class="fragment">Solución: div+div>(p>span+em)+footer</p>
+                </section>
+            </section>
+            <section>
+                <section class="present">
+                    <h3>Clases e ID</h3>
+                    <h4>Incluyendo clases e id en nuestras etiquetas</h4>
+                    <p class="fragment">p.nombre-clase+p#nombre-id+p.clase1</p>
+                    <div class="fragment">
+                        <pre class="fragment"><code>
+            <p class="nombre-clase"></p>
+            <p id="nombre-id"></p>
+                                                                            </code></pre>
+                    </div>
+                </section>
+                <section data-background="#add9e4" class="future">
+                    <h3>Clases e ID</h3>
+                    <h4>Varias clases en la misma etiqueta</h4>
+                    <p class="fragment">p.clase1.clase2.clase3</p>
+                    <div class="fragment">
+                        <pre class="fragment"><code>
+            <p class="clase1 clase2 clase3"></p>
+                                                                            </code></pre>
+                    </div>
+                </section>
+                <section data-background="#add9e4" class="future">
+                    <h2>Ejercicio creando clases</h2>
+                    <div class="fragment">
+                        <p class="fragment">Crea la siguiente estructura</p>
+                        <pre class="fragment"><code>
+            <div id="hola" class="article"></div>
+                                                                            </code></pre>
+                    </div>
+                    <p class="fragment">Solución: div#id.article</p>
+                </section>
+            </section>
+            <section>
+                <section class="present">
+                    <h3>Custom atributes</h3>
+                    <h4>Creando atributos</h4>
+                    <p class="fragment">[a='value1' b="value2"]</p>
+                    <div class="fragment">
+                        <pre class="fragment"><code>
+                                    <div a="value1" b="value2"></div>
+                                                                                                    </code></pre>
+                    </div>
+                </section>
+                <section data-background="#add9e4" class="future">
+                    <h2>Ejercicio custom atributes</h2>
+                    <div class="fragment">
+                        <p class="fragment">Crea la siguiente estructura</p>
+                        <pre class="fragment"><code>
+                                    <p title="Hola mundo!"></p>
+                                                                                                    </code></pre>
+                    </div>
+                    <p class="fragment">p[title="Hola mundo!"]</p>
+                </section>
+            </section>
+            <section>
+
+                    <section class="present">
+                        <h3>Texto</h3>
+                        <h4>Incluyendo texto</h4>
+                        <p class="fragment">p{Hola qué pasa qué tal}</p>
+                        <div class="fragment">
+                            <pre class="fragment"><code>
+                        <p>Hola qué pasa qué tal</p>
+                                                                                        </code></pre>
+                        </div>
+                    </section>
+                    <section data-background="#add9e4" class="future">
+                        <h2>Ejercicio texto</h2>
+                        <div class="fragment">
+                            <p class="fragment">Crea la siguiente estructura</p>
+                            <pre class="fragment"><code>
+                        <p>Haz <a href="">click</a> para continuar</p>
+                                                                                        </code></pre>
+                        </div>
+                        <p class="fragment">p>{Haz }+a{click}+{ para continuar}</p>
+                    </section>
+
+            </section>
+            <section>
+                <section class="present">
+                    <h3>Multiplicación</h3>
+                    <h4>Creando múltiples etiquetas</h4>
+                    <p class="fragment">article>p*10</p>
+                    <div class="fragment">
+                        <pre class="fragment"><code>
+    <article>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </article>
+                                                            </code></pre>
+                    </div>
+                </section>
+                <section data-background="#add9e4" class="future">
+                    <h2>Ejercicio multiplicación</h2>
+                    <div class="fragment">
+                        <p class="fragment">Crea la siguiente estructura</p>
+                        <pre class="fragment"><code>
+
+    <nav>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
+                                                            </code></pre>
+                    </div>
+                    <p class="fragment">Solución: nav>ul>li*8</p>
+                </section>
+            </section>
+                    <section>
+                        <section class="present">
+                            <h3>Numerando elementos</h3>
+                            <h4>$ será el número. El $ equivale a un dígito, $$ equivalen a dos dígitos, etc...</h4>
+                            <p class="fragment">ul>li.clase$*5</p>
+                            <div class="fragment">
+                                <pre class="fragment"><code>
+            <ul>
+                <li class="clase1"></li>
+                <li class="clase2"></li>
+                <li class="clase3"></li>
+                <li class="clase4"></li>
+                <li class="clase5"></li>
+            </ul>
+                                                                    </code></pre>
+                            </div>
+                        </section>
+                        <section>
+                            <h2>Cambiando el orden y la dirección de la numeración</h2>
+                            <p>Con la @ es un modificador que nos permite cambiar el orden y el número desde el que se inicia</p>
+                            <p>Para invertir el orden deberemos de incluir el signo negativo <strong>-</strong></p>
+                            <p>Para modificar el número del inicio deberemos de inclur ese número después de la @</p>
+                            <p>Para</p>
+                        </section>
+                        <section data-background="#add9e4" class="future">
+                            <h2>Ejercicio numerando elementos</h2>
+                            <div class="fragment">
+                                <p class="fragment">
+    <ul><li>Iniciando desde el 3</li>
+        <li>Con 2 dígitos</li>        <li>Orden inverso</li>
+            <li>Repetición de 5 elementos</li></ul></p>
+                                <pre class="fragment"><code>
+                                <ul>
+                                    <li class="item07"></li>
+                                    <li class="item06"></li>
+                                    <li class="item05"></li>
+                                    <li class="item04"></li>
+                                    <li class="item03"></li>
+                                </ul>
+                                                                    </code></pre>
+                            </div>
+                            <p class="fragment">Solución: ul>li.item$$@-3*5</p>
+                        </section>
+                    </section>
+                    <section>
+                        <section class="present">
+                            <h2 class="fragment">Emmet es inteligente</h2>
+
+                            <p class="fragment">En caso de no escribir la etiqueta el 'predice' según la estructura cúal sería la etiqueta correcta.</p>
+
+                            <p class="fragment">table>.claseFila>.claseColumna</p>
+                            <pre class="fragment"><code>
+                                <table>
+                                    <tr class="claseFila">
+                                        <td class="claseColumna"></td>
+                                    </tr>
+                                </table>
+                            </code></pre>
+                        </section>
+                        <section class="future">
+                            <h2 class="fragment">Ejercicio etiquetas implícitas</h2>
+
+                            <p class="fragment">Si escribimos un <strong>UL</strong>, ¿cúal sería la etiqueta implícita?</p>
+
+                            <pre class="fragment"><code>
+                                ul>.clase
+                            </code></pre>
+
+                            <pre class="fragment"><code>
+                                <ul>
+                                    <li class="clase"></li>
+                                </ul>
+                            </code></pre>
+
+                        </section>
+                    </section>
+
+                    <section>
+                        <h2>Lorem Ipsum</h2>
+
+                        <p class="fragment">Escribid Lorem y dadle al tabulador</p>
+
+                        <p style="font-style: italic;" class="fragment">Jugad con los multiplicadores</p>
+                    </section>
+
+                    <section>
+                        <h2>CSS</h2>
+
+                            <p class="fragment">Una ayudita nunca viene mal</p>
+                            <p class="fragment">Vamos al PackageControl y buscamos 'Emmet CSS Snippets'</p>
+                            <p style="white-space:nowrap;" class="fragment">Este package nos sugiere al escribir los atajos de Emmet en CSS</p>
+
+                            <img style="max-width: 550px;" src="images/sugerencias-css-emmet.png" alt="" class="fragment">
+                    </section>
+
+                    <section>
+
+                        <h2>Empezando a trabajar con Emmet-CSS</h2>
+                        <p class="fragment">Box-sizing</p>
+                        <p class="fragment">Escribid <strong>bxz</strong></p>
+                        <p class="fragment">Emmet no es sensible a la sintaxis</p>
+                        <p class="fragment">bx:z == bx-z == bxz </p>
+                        <p class="fragment">Incluyendo un guión al principio completa la propiedad con los prefijos</p>
+                    </section>
+
+                                    <section>
+                                        <h2>FONT-FACE</h2>
+                                        <p>¿Cansados de ir a copiar siempre para importar las fuentes?</p>
+                                        <p class="fragment">Escribid: <strong>@f+</strong></p>
+
+                                        <pre class="fragment"><code>
+                    @font-face {
+                        font-family: 'FontName';
+                        src: url('FileName.eot');
+                        src: url('FileName.eot?#iefix') format('embedded-opentype'),
+                             url('FileName.woff') format('woff'),
+                             url('FileName.ttf') format('truetype'),
+                             url('FileName.svg#FontName') format('svg');
+                        font-style: normal;
+                        font-weight: normal;
+                    }
+                                        </code></pre>
+                                    </section>
+
+                    <section>
+                        <h2>Incluyendo medidas en las propiedades</h2>
+
+                        <p class="fragment">m10 → margin: 10px;</p>
+                        <ul class="fragment">
+                            <li class="fragment">- → default
+                            <p class="fragment"><i>m10.5-5- → margin: 10.5em 5px;</i></p></li>
+                            <li class="fragment">p → %
+                            <p class="fragment"><i>m10p → margin: 10%;</i></p></li>
+                            <li class="fragment">
+                                r → rem
+                                <p class="fragment"><i>m10r → margin: 10rem;</i></p></li>
+                            </li>
+                            <li class="fragment">
+                                e → em
+                                <p class="fragment"><i>m10e → margin: 10em;</i></p></li>
+                            </li>
+                        </ul>
+
+                    </section>
+
+                    <section>
+                        <h2>Ejercicio medidas</h2>
+
+                        <pre class="fragment"><code>
+                            .clase {
+                                width: 50%;
+                                font-size: 1em;
+                                margin: 10px 20px;
+                            }
+                        </code></pre>
+
+                        <p class="fragment">Solución: w50p fz1e m10-20-</p>
+                    </section>
+
+
+
+
+        </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function() {
+                return !document.body.classList;
+            }
+        }, {
+            src: 'plugin/markdown/marked.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/markdown/markdown.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }, {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+        }, {
+            src: 'plugin/notes/notes.js',
+            async: true
+        }]
+    });
+    </script>
+</body>
+!>(header>nav>ul>li*4)+section>(article>h2{Noticia $})*4+aside^+footer>ul>li*3
+
+</html>
